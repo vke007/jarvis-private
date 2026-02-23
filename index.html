@@ -46,17 +46,17 @@ body {
 }
 
 /* Animated background */
-body::before {
+/*body::before {
   content: '';
   position: fixed;
   inset: 0;
-  /*background: 
+  background: 
     radial-gradient(ellipse 800px 600px at 50% 0%, rgba(0,255,170,0.1), transparent),
     radial-gradient(ellipse 600px 400px at 0% 100%, rgba(255,0,255,0.08), transparent),
-    radial-gradient(ellipse 500px 500px at 100% 50%, rgba(0,100,255,0.06), transparent);*/
+    radial-gradient(ellipse 500px 500px at 100% 50%, rgba(0,100,255,0.06), transparent);
   pointer-events: none;
   z-index: -1;
-}
+}*/
 
 /* Holographic grid overlay */
 body::after {
@@ -99,8 +99,8 @@ body::after {
   padding: 50px 40px;
   position: relative;
   backdrop-filter: blur(20px);
-  box-shadow: 0 0 60px var(--glow), inset 0 0 60px rgba(0,255,170,0.05);
-  /*animation: cardEntry 0.8s cubic-bezier(0.16, 1, 0.3, 1);*/
+ /* box-shadow: 0 0 60px var(--glow), inset 0 0 60px rgba(0,255,170,0.05);*/
+  animation: cardEntry 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes cardEntry {
@@ -115,7 +115,7 @@ body::after {
 }
 
 .login-card::before {
-  content: '';
+  /*content: '';*/
   position: absolute;
   inset: -2px;
  background: linear-gradient(45deg, var(--primary), var(--accent), var(--primary));
