@@ -64,6 +64,9 @@ body::after {
   position: fixed;
   inset: 0;
   background-size: 50px 50px;
+    background-image: 
+    linear-gradient(rgba(0,255,170,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,170,0.03) 1px, transparent 1px);
   pointer-events: none;
   z-index: 0;
   animation: gridPulse 4s ease-in-out infinite;
@@ -115,7 +118,7 @@ body::after {
   content: '';
   position: absolute;
   inset: -2px;
-  background: linear-gradient(45deg, var(--primary), var(--accent), var(--primary));
+ 
   border-radius: 16px;
   z-index: -1;
   opacity: 0;
